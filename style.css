@@ -582,6 +582,11 @@ footer p{
 .font-color{
     color: white;
 }
+.font-color-top{
+    color: white;
+    top: 8.5rem;
+    position: relative;
+}
 
 .color_black{
     color: black;
@@ -1019,13 +1024,15 @@ body {
 
 /* Base Style for Icons */
 .social-icon {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     object-fit: cover;
     border: 2px solid transparent;
+    top: 9rem;
+    position: relative;
 }
 
 /* LinkedIn Specific Style */
@@ -1115,7 +1122,7 @@ body {
 }
 
 .project-content p {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     margin-bottom: 20px;
 }
 
@@ -1134,4 +1141,22 @@ body {
 .github-btn:hover {
     background: linear-gradient(135deg, #00ff88, #00aaff);
     transform: scale(1.1);
+}
+.scroll-to-top {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.scroll-to-top:hover {
+    transform: translateX(-50%) translateY(-5px);
 }

@@ -30,6 +30,7 @@
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <button class="modern_button" onclick="window.open('./assets/pravallika-regalla.pdf')">Download CV</button>
                 </ul>
             </div>
         </nav>
@@ -46,6 +47,7 @@
                     <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                     <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                     <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                    <button class="modern_button" onclick="window.open('./assets/pravallika-regalla.pdf')">Download CV</button>
                 </div>
             </div>
         </nav>
@@ -56,16 +58,10 @@
                 <p class="section__text__p2" id="animated-title">Front-End Developer</p>
 
                 <div class="btn-container">
-                    <button class="modern_button" onclick="window.open('./assets/pravallika-regalla.pdf')">Download CV</button>
-                    <button class="modern_button" onclick="location.href='./#contact'">Contact</button>
+                    <button class="modern_button" onclick="location.href='./#about'">More Details Below</button>
 
                 </div>
-                <div id="social-container">
-                    <img src="./assets/linkedin.jpg" alt="LinkedIn" class="icon social-icon linkedin" 
-                         onclick="location.href='https://www.linkedin.com/in/pravallikaregalla/'">
-                    <img src="./assets/github.jpg" alt="GitHub" class="icon social-icon github" 
-                         onclick="location.href='https://www.github.com'">
-                </div>
+             
                 
                 
             </div>
@@ -133,28 +129,28 @@ I thrive on building intuitive user interfaces, optimizing performance, and enha
                 <div class="project-card left">
                     <div class="project-content">
                         <h2>To-Do App</h2>
-                        <p class="font-color">A simple and efficient task management application.</p>
+                        <p class="font-color">The **To-Do App** is a simple and efficient task management application that helps users create, organize, and track their daily tasks with ease.</p>
                         <button class="github-btn" onclick="window.open('https://github.com/pravallika-regalla/ToDo-App', '_blank')">View GitHub</button>
                     </div>
                 </div>
                 <div class="project-card right">
                     <div class="project-content">
                         <h2>Face Mask Detection</h2>
-                        <p class="font-color">his project will detects whether a person is wearing a mask or not in live video stream</p>
+                        <p class="font-color">The **Face Mask Detection** project uses AI to identify if a person is wearing a mask in real-time through a live video stream. It leverages deep learning to classify faces as **"Mask"** or **"No Mask."**</p>
                         <button class="github-btn" onclick="window.open('https://github.com/pravallika-regalla/Face-Mask-Detection', '_blank')">View GitHub</button>
                     </div>
                 </div>
                 <div class="project-card left">
                     <div class="project-content">
                         <h2>Voice Based Email</h2>
-                        <p class="font-color"> This is a program to interact with Email System through Voice Commands.</p>
+                        <p class="font-color">The **Voice-Based Email** project enables users to interact with their email system using voice commands. It leverages speech recognition and natural language processing to compose, send, and manage emails hands-free.</p>
                         <button class="github-btn" onclick="window.open('https://github.com/pravallika-regalla/Voice-Based-Email', '_blank')">View GitHub</button>
                     </div>
                 </div>
                 <div class="project-card right">
                     <div class="project-content">
                         <h2>Drowsiness Detection</h2>
-                        <p class="font-color">This program alert the driver when he/she becomes Drowsy. It can be also implemented in Raspberry pi</p>
+                        <p class="font-color">The **Drowsiness Detection** project alerts drivers when they become drowsy using real-time monitoring. It analyzes eye movements and facial features and can be implemented on Raspberry Pi for enhanced safety.</p>
                         <button class="github-btn" onclick="window.open('https://github.com/pravallika-regalla/Drowsiness-Detection', '_blank')">View GitHub</button>
                     </div>
                 </div>
@@ -212,7 +208,7 @@ I thrive on building intuitive user interfaces, optimizing performance, and enha
             </div>
         </section>
         <footer>
-            <nav class="footer-nav">
+            <!-- <nav class="footer-nav">
                 <div class="nav-links-container">
                     <ul class="nav-links">
                         <li><a href="#about">About</a></li>
@@ -221,8 +217,24 @@ I thrive on building intuitive user interfaces, optimizing performance, and enha
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-            </nav>
-            <p class="font-color">Copyright &#169; 2024 Pravallika. All Rights Reserved</p>
+            </nav> -->
+            <!-- <div id="social-container">
+                <img src="./assets/linkedin.jpg" alt="LinkedIn" class="icon social-icon linkedin" 
+                     onclick="location.href='https://www.linkedin.com/in/pravallikaregalla/'">
+                <img src="./assets/github.jpg" alt="GitHub" class="icon social-icon github" 
+                     onclick="location.href='https://www.github.com'">
+            </div>
+            <p class="font-color">Copyright &#169; 2024 Pravallika. All Rights Reserved</p> -->
+            <footer class="footer">
+                <div class="scroll-to-top" onclick="location.href='./#desktop-nav'">
+                    <img src="./assets/uparrow.png" alt="Scroll to Top">
+                </div>
+                <img src="./assets/linkedin.jpg" alt="LinkedIn" class="icon social-icon linkedin" 
+                onclick="location.href='https://www.linkedin.com/in/pravallikaregalla/'">
+           <img src="./assets/github.jpg" alt="GitHub" class="icon social-icon github" 
+                onclick="location.href='https://www.github.com'">
+                <p class="font-color-top">Copyright &#169; 2024 Pravallika. All Rights Reserved</p> 
+            </footer>
         </footer> 
         </div>
         </div>
