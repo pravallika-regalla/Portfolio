@@ -5,6 +5,7 @@
         <title>My Portfolio</title>
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="mediaqueries.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" /> 
     </head>
     
     <body>
@@ -27,11 +28,12 @@
 <nav id="desktop-nav">
     <div class="logo">Pravallika</div>
     <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#tech-stack">Tech Stack</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
-        <button class="modern_button" onclick="window.open('./assets/pravallika-regalla.pdf')">Download CV</button>
+        <button class="download-cv" onclick="window.open('./assets/Pravallika_AngularDev.pdf')">Download CV</button>
     </ul>
 </nav>
 
@@ -44,11 +46,12 @@
             <span></span>
         </div>
         <ul class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+            <li><a href="#tech-stack" onclick="toggleMenu()">Experience</a></li>
             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            <button class="modern_button" onclick="window.open('./assets/pravallika-regalla.pdf')">Download CV</button>
+            <button class="download-cv" onclick="window.open('./assets/pravallika-regalla.pdf')">Download CV</button>
         </ul>
     </div>
 </nav>
@@ -61,7 +64,10 @@
 
                 <div class="btn-container">
                     <button class="modern_button" onclick="location.href='./#about'">More Details Below</button>
-
+                    <div class="double-arrow" onclick="location.href='./#about'">
+                        <img src="assets/doublearrow.png" alt="Double Arrow" class="arrow-icon">
+                    </div>
+                    
                 </div>
              
                 
@@ -100,7 +106,7 @@ I thrive on building intuitive user interfaces, optimizing performance, and enha
         </section>
         
        
-        <section class="tech-stack">
+        <section id="tech-stack">
             <p class="section__text__p1">Explore My</p>
             <h1 class="title">Tech Stack</h1>
             <div class="tech-grid">
@@ -218,7 +224,7 @@ I thrive on building intuitive user interfaces, optimizing performance, and enha
             <img src="./assets/github.jpg" alt="GitHub" class="icon social-icon github" 
             onclick="location.href='https://www.github.com'">
             
-            <p class="font-color-top">Copyright &#169; 2024 Pravallika. All Rights Reserved</p> 
+            <p class="font-color-top">Copyright &#169; 2025 Pravallika. All Rights Reserved</p> 
         </footer>
         
         

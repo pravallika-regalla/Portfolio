@@ -489,6 +489,8 @@ section{
     display: flex;
     justify-content: center;
     gap: 1rem;
+    position: relative;
+    left: 1rem;
 }
 .btn{
     font-weight: 600;
@@ -838,7 +840,7 @@ article:hover {
     flex: 1;
     display: flex;
     /* justify-content: center; */
-    right: 6rem;
+    left: 1rem;
     position: relative;
 }
 
@@ -862,6 +864,8 @@ article:hover {
     color: white;
     text-align: left;
     /* padding-left: 3rem; */
+    position: relative;
+    left: 5rem;
 }
 
 .title {
@@ -1262,4 +1266,49 @@ body {
 }
 .scroll-to-top:hover {
     transform: translateX(-50%) translateY(-5px);
+}
+.download-cv {
+    /* background: linear-gradient(135deg, #6A5ACD, #483D8B); Elegant Purple Gradient */
+    border: none;
+ color: white; 
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0px 4px 15px rgba(106, 90, 205, 0.4);
+    background: transparent;
+}
+
+.download-cv:hover {
+    background: linear-gradient(135deg, #483D8B, #6A5ACD); /* Hover Gradient Reverse */
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 20px rgba(106, 90, 205, 0.6);
+}
+/* Double Arrow Animation */
+.double-arrow {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.arrow-icon {
+    width: 40px; /* Adjust size as needed */
+    animation: moveUpDown 1s infinite alternate ease-in-out;
+    top: 5rem;
+    position: relative;
+    right: 7rem;
+}
+
+
+/* Keyframes for continuous up and down animation */
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+    }
 }

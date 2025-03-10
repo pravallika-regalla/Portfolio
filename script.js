@@ -1,8 +1,7 @@
 const titles = [
-  "UI/UX Developer",
+  "UI/UX Devloper",
   "Angular Developer",
-  "Front-End Developer",
-  "Enthusiast Video Editor"
+  "Enthusiastic Video Editor"
 ];
 
 let index = 0;
@@ -14,7 +13,7 @@ function changeTitle() {
       titleElement.innerHTML = titles[index]; // Change text
       titleElement.style.opacity = 1; // Fade-in effect
       index = (index + 1) % titles.length; // Loop through titles
-  }, 1000); // Wait 1s before changing text
+  }, 400); // Wait 1s before changing text
 }
 
 document.addEventListener("DOMContentLoaded", function () {
