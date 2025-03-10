@@ -17,6 +17,34 @@ function changeTitle() {
   }, 1000); // Wait 1s before changing text
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Mobile Menu Toggle
+    window.toggleMenu = function () {
+        const menu = document.querySelector(".menu-links");
+        const icon = document.querySelector(".hamburger-icon");
+        menu.classList.toggle("open");
+        icon.classList.toggle("open");
+    };
+
+    // Scroll Animations
+    const elementsToAnimate = document.querySelectorAll(".animate-on-scroll");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                } else {
+                    entry.target.classList.remove("visible");
+                }
+            });
+        },
+        { threshold: 0.2 }
+    );
+
+    elementsToAnimate.forEach((element) => observer.observe(element));
+});
+
 // Change title every 3 seconds
 setInterval(changeTitle, 900);
 
