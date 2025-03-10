@@ -132,6 +132,28 @@ document.addEventListener("DOMContentLoaded", function () {
   projectCards.forEach((card) => observer.observe(card));
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const elementsToAnimate = document.querySelectorAll(".animate-on-scroll");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible"); // Add animation class when visible
+                } else {
+                    entry.target.classList.remove("visible"); // Remove to allow re-triggering
+                }
+            });
+        },
+        {
+            root: null, // Uses viewport
+            rootMargin: "0px 0px -10px 0px", // Ensures early triggering
+            threshold: 0.05, // Triggers when 5% of element is visible (slow scrolling support)
+        }
+    );
+
+    elementsToAnimate.forEach((element) => observer.observe(element));
+});
 
 
 document.addEventListener("DOMContentLoaded", function () {
