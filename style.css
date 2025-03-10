@@ -12,6 +12,95 @@ body{
     background: #111;
     height: 100vh;
 }
+
+
+#certifications {
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+/* Layout Structure */
+.certification-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+/* Certification Cards */
+.certification-card {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 18px;
+    width: 750px;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: transform 1.2s ease-in-out, opacity 1.2s ease-in-out;
+}
+
+/* Opposite Animations */
+.certification-card.right {
+    transform: translateX(120px);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-in-out;
+}
+
+.certification-card.left {
+    transform: translateX(-120px);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-in-out;
+}
+
+/* Smooth Visibility Trigger */
+.certification-card.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Icon Animation */
+.meta-icon img, .google-icon img {
+    width: 80px;
+    transition: transform 0.8s ease-in-out;
+}
+
+.meta-icon.visible img, .google-icon.visible img {
+    transform: scale(1.2);
+}
+
+
+/* Hover Effects */
+.certification-card:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 255, 0.6);
+    border-color: rgba(0, 255, 255, 0.8);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .certification-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .certification-card {
+        width: 90%;
+    }
+
+    .meta-icon img, .google-icon img {
+        width: 60px;
+    }
+}
+
+
 .wrapper span{
    position: fixed;
    bottom: -180px;

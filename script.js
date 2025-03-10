@@ -28,6 +28,32 @@ function toggleMenu(){
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+    const certificationCards = document.querySelectorAll(".certification-card");
+    const icons = document.querySelectorAll(".meta-icon, .google-icon");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                } else {
+                    entry.target.classList.remove("visible"); // Remove to re-trigger animation
+                }
+            });
+        },
+        {
+            root: null,  // Uses viewport as root
+            rootMargin: "0px",  // No margin offset
+            threshold: 0.1,  // Trigger when 10% of element is visible
+        }
+    );
+
+    certificationCards.forEach((card) => observer.observe(card));
+    icons.forEach((icon) => observer.observe(icon));
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
   console.log("Animation script loaded!"); // Debug log
 
   const sections = document.querySelectorAll("section");
